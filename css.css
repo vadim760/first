@@ -224,6 +224,8 @@
     top: 618px;
     left: 350px;
 
+    cursor: pointer;
+
 }
 .about__company__main{
     position: relative;
@@ -434,4 +436,12 @@
 .second__card__text li::marker {
     color: #C4C4C4;
 
+}
+.products__container {
+    margin-top: 6.25rem;
+    margin-left: 23.4375rem;
+
+     width: 73.125rem;
+
+     border: 1px solid ;
 }
