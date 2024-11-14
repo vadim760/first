@@ -34,6 +34,8 @@
  
 }
 .nav_links a {
+    position: relative;
+
     text-decoration: none;
     color: #636363;
 
@@ -48,7 +50,40 @@
     
     
 }
+.nav_links a::before {
+    position: absolute;
 
+    content: '';
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: opacity 0.3s;
+    opacity: 0;
+
+    border: 40px solid transparent;
+    border-top: 15px solid #00BA59 ;
+
+}
+.nav_links a::after {
+    position: absolute;
+
+    content: '';
+    bottom: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: opacity 0.3s;
+    opacity: 0;
+
+    border: 40px solid transparent;
+    border-bottom: 15px solid #00BA59 ;
+
+}
+.nav_links a:hover::before,
+.nav_links a:hover::after {
+    opacity: 1;
+}
 .phonenumber {
     text-align: right;
 
@@ -131,6 +166,10 @@
     font-style: normal;
     font-size: 16px;
 }
+.CookieList li::marker {
+    color: #C4C4C4;
+
+}
 .Banan {
     position: absolute;
     display: flex;
@@ -159,6 +198,10 @@
     font-style: normal;
     font-size: 16px;
 }
+.BananList li::marker {
+    color: #C4C4C4;
+
+}
 .ReadMore {
     position: absolute;
     
@@ -182,27 +225,213 @@
     left: 350px;
 
 }
-
-.flower {
+.about__company__main{
     position: relative;
+    width: 1341px;
+    height: 816px;
 
-    top: 60px;
-    left: 204px;
 }
+.flower__png {
 
-.aboutCompany {
-    text-align: center;
+    margin-left: 12.75rem;
+    margin-top: 3.75rem;
+
+
+}
+.about {
     position: absolute;
 
-    width: 870px;
-    height: 647px;
 
-    border: #F7F7F7 10px solid;
-    border-radius: 20px;
-    top: 144px
+
+    width: 54.375rem;
+    height: 40.4375rem;
+
+    border: .625rem solid #F7F7F7;
+    border-radius: 1.25rem;
+
+    top: 9rem;
+    left: 42.1875rem;
+
+    background-color: #FFFFFF;
+}
+.about__tittle {
+
+    font-size: 1.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+.about__content {
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 18.75rem;
+    margin-top: 3.125rem;
+
+}
+.wave {
+    width: 16.875rem;
+    height: .75rem;
+
+    margin-top: .625rem;
+
+}
+.about__text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.5rem;
+
+    margin-top: 1.8125rem;
+
+}
+.about__text p {
+
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    color: #636363;
+
+}
+.video {
+    position: absolute;
+
+    transform: translate(50%, 50%);
+
+    top: -8.25rem;
+    left: -40.25rem;
+}
+.services {
+    position: relative;
+
+    padding-top: 3.75rem;
+
+}
+.services__background {
+    display: inline-block;
+    z-index: -2 ;
+}
+.container {
+    width: 73.125rem;
+    
+    margin: 0 auto ; 
 }
 
-.OurCompany {
+.container__services {
+    position: absolute;
 
+    top: 6.25rem;
+}
+.services__tittle {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 2.8125rem;
+    width: 73.125rem;
+}
+.services__wave {
+    margin-top: .625rem;
+
+    width: 16.875rem;
+    height: .75rem;
+
+}
+.services__tittle p {
+    
+    color: #373737;
+
+    font-size: 1.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.services__cards {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+
+    width: 73.125rem;
+
+
+    top: 12.9375rem;
+
+}
+.services__first__card {
+    
+    width: 23.125rem;
+
+    background-color: #FFFFFF;
+    
+    border-radius: .625rem;
+
+    box-shadow: 0rem .375rem .625rem rgba(99, 99, 99, 0.3);
+}
+.first__card__text {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+
+    padding-bottom: 1.875rem;
+
+    margin-top: 1.9375rem;
+    margin-left: 1.875rem;
+
+    gap: .9375rem;
+
+
+
+}
+.first__card__text li::marker {
+
+    color: #00BA89;
+
+}
+.services__second__card {
+    padding: 1.875rem 1.875rem 0 1.875rem;
+
+
+    background-color: #FFFFFF;
+    
+    border-radius: .625rem;
+
+    box-shadow: 0rem .375rem .625rem rgba(99, 99, 99, 0.3);
+}
+.second__card__text {
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+
+    padding-bottom: 1.875rem;
+
+    margin-top: 1.9375rem;
+    margin-left: 1.875rem;
+
+    gap: .9375rem;
+}
+.second__card__text li::marker {
+    color: #C4C4C4;
 
 }
